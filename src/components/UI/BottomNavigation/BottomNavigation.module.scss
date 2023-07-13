@@ -1,0 +1,22 @@
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > button {
+    opacity: 0.9;
+    transition: border-color 0.4s ease, opacity 0.4s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    &:active {
+      border-color: red;
+      opacity: 1;
+    }
+    &:hover {
+      border-color: red;
+      opacity: 1;
+    }
+  }
+}
