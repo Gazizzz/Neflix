@@ -2,31 +2,31 @@ import styles from "./BottomNavigation.module.scss";
 
 const tabs = [
   {
-    id: 1,
-    name: Overview,
+    _id: 1,
+    name: "Overview",
   },
   {
-    id: 2,
-    name: Episodes,
+    _id: 2,
+    name: "Episodes",
   },
   {
-    id: 1,
-    name: Details,
+    _id: 3,
+    name: "Details",
   },
 ];
 
 const BottomNavigation = ({ activeTab, setActiveTab }) => {
   return (
     <nav className={styles.nav}>
-      {tabs.map((tab) => {
+      {tabs.map((tab) => (
         <button
-          key={tab.id}
-          onClick={(e) => setActiveTab(tab.id)}
-          className={activeTab === tab.id ? styles.active : ""}
+          key={tab._id}
+          onClick={(e) => setActiveTab(tab._id)}
+          className={activeTab === tab._id ? styles.active : ""}
         >
           {tab.name}
-        </button>;
-      })}
+        </button>
+      ))}
     </nav>
   );
 };

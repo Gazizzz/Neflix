@@ -6,6 +6,12 @@
   outline: none;
   font-size: 18px;
   margin-right: 1rem;
+  display: inline-flex;
+  color: gray;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+  background-color: transparent;
 
   > i {
     font-style: 24px;

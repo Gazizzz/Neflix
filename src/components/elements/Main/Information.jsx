@@ -11,21 +11,21 @@ const Information = ({ movie }) => {
   };
   return (
     <div className={styles.info}>
+      <img src={movie.logo} alt="" width="200" />
       <div className={styles.additional}>
-        <img src={movie.logo} alt="" width="200" />
         <span>{movie.year}</span>
-        <span>{movie.limitAge}</span>
+        <span className={styles.limitAge}>{movie.limitAge}</span>
         <span>{movie.rating}</span>
         <span>{movie.duration}</span>
       </div>
-      <div className={styles.description}> {move.description} </div>
+      <div className={styles.description}> {movie.description} </div>
       <div className={styles.buttons}>
         <Button cb={() => console.log("video is open")}>
-          <i className="bx bx-play"></i>
+          <i className="bx bx-play" style={{ color: "red" }}></i>
           <span>Play</span>
         </Button>
         <Button cb={addToFavorites}>
-          <i className="bx bx-play"></i>
+          <i className="bx bx-plus"></i>
           <span>My list</span>
         </Button>
       </div>
