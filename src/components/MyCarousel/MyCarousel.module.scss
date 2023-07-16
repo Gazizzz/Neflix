@@ -1,0 +1,26 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  .myswiper {
+    width: 100%;
+    .styles.imgcontainer {
+      position: relative;
+    }
+    .swiperslide {
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      img {
+        width: 100%;
+
+        max-height: 400px;
+
+        object-fit: cover;
+      }
+    }
+  }
+}

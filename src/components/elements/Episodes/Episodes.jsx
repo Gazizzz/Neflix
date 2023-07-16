@@ -9,7 +9,7 @@ const Episodes = () => {
       <div>
         <img src={DATA[0].logo} alt="" width="200" />
       </div>
-      <MyCarousel></MyCarousel>
+      <MyCarousel photos={DATA[0]}></MyCarousel>
     </div>
   );
 };
